@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Forms Lesson</title>
+</head>
+
+<body>
+    <h1>Forms Lesson</h1>
+    <form action="/chickens">
+        <p>
+            <label for="iptUsrnm">Enter Username:</label>
+            <input type="text" placeholder="username" id="iptUsrnm" name="usrnm">
+        </p>
+        <p>
+            <label for="iptPw">Enter Password:</label>
+            <input type="password" placeholder="password" id="iptPw" name="pw">
+        </p>
+        <p>
+            <label for="iptClr">Choose a color</label>
+            <input type="color" id="iptClr" name="clr">        
+        </p>
+        <p>
+            <label for="iptNum">Enter your age</label>
+            <input type="number" name="age" id="iptNum" min="8" max="100" step="6">
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <form action="https://www.google.com.sg">
+        <p>
+            <label for="iptUsrnm">Search Google:</label>
+            <input type="text" placeholder="what you looking for?" id="iptUsrnm" name="q">
+        </p>
+        <button>Search now</button>
+    </form>
+
+    <h2>MORE FORMS</h2>
+    <form action="chickens.html">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="idS">Small</label>
+            <input type="radio" name="shirtsize" id="idS" value="szSmall">
+            <input type="radio" name="shirtsize" id="idM" value="szMed">
+            <input type="radio" name="shirtsize" id="idL" value="szLrg">
+        </p>
+        <p>
+            <label for="slMeal">Please select a Meal</label>
+            <select name="meal" id="slMeal">
+                <option value="vlHotDog">Hot Dog</option>
+                <option value="vlTangYuan" selected>Tang Yuan</option>
+            </select>
+        </p>
+        <p>
+            <label for="rngAudio">Loud or soft</label>
+            <input type="range" name="audioLevel" id="rngAudio" min="1" max="100" step="8">
+        </p>
+        <p>
+            <label for="txtSpec">Any special request?</label>
+            <textarea id="txtSpec" placeholder="Hello"></textarea>
+        </p>
+        <button>Submit</button>
+    </form> 
+
+    <h2>
+        <form action="chickens.html">
+            <label for="iptName">Enter Name:</label>
+            <input type="text" id="iptName" name="nm" required>
+            <label for="iptIC">Enter IC:</label>
+            <input type="text" id="iptIC" minlength="5" maxlength="50" required>
+            <label for="iptEmail"></label>
+            <input type="email" id="iptEmail" required>
+            <button>Register</button>
+        </form>
+    </h2>
+    
+
+</body>
+
+</html>
